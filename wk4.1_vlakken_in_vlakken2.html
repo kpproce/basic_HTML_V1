@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+
+        body {
+            height: 100vh;
+        }
+
+       .container {
+            height: 45%;
+            display: flex;
+        }
+       
+        #container1 {
+            border:solid  red 3px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #container2 {
+            border:solid  orange 3px;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .containerBlokken {
+            margin: 10px;
+            text-align: center;
+            box-shadow: 2px 3px rgb(204, 147, 147);
+            background-color: seagreen;
+            max-height: 300px;
+            font-size: 4vh;
+        }   
+
+</style>
+
+
+</head>
+<body>
+    <div id="container2" class="container">
+        <div id="b1" class="containerBlokken">
+            <div>inhoud 1</div>
+        </div>
+        <div id="b2" class="containerBlokken">
+            <div> inhoud 2</div>
+        </div>
+        <div id="b3" class="containerBlokken">
+            <div> inhoud 3</div>
+        </div>
+    </div>
+
+    <div id="container2" class="container">
+        <div id="b1" class="containerBlokken">
+            <div>inhoud 4</div>
+        </div>
+        <div id="b2" class="containerBlokken">
+            <div> inhoud 5</div>
+        </div>
+        <div id="b3" class="containerBlokken">
+            <div> inhoud 6</div>
+        </div>
+    </div>
+    
+    
+
+    
+  
+</body>
+</html>

@@ -1,0 +1,82 @@
+body { height: 100vh }
+
+nav {
+    background-color: green;
+    padding: 1px;
+}
+
+#middenBlokContainer {
+    display: flex;
+    min-height: 70%;
+}         
+
+ul {
+    background-color: rgb(135, 89, 228); 
+    display: flex;
+    padding-left: 2px;
+}
+
+li {
+    background-color: rgb(187, 187, 48);
+    border: solid 3px rgb(233, 224, 224) ;
+    list-style: none;
+    color:rgb(25, 63, 230);
+    padding: 5px;
+    margin: 2px;   
+}
+
+li:hover {
+    border: solid 8px rgb(218, 177, 177) ;
+    background-color: yellow;
+    padding: 0px;
+}
+
+a { 
+    background-color:cornsilk;
+}
+
+#ulMenuLeft{
+    flex-direction: column;
+}
+
+#site {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    width:20%;
+
+}
+
+#content {
+    background-color: blue;
+    box-shadow: 2px 5px rgb(20, 81, 105);
+    font-size: x-large;
+    width:80%;
+}
+
+.blokken {
+    margin: 10px;
+    text-align: center;
+    box-shadow: 2px 3px rgb(105, 20, 20);
+}   	
+
+#footer {
+    background-color: blue;
+    box-shadow: 2px 5px rgb(20, 81, 105);
+    display:flex;
+}
+
+.floatingButton {
+    position: fixed; 
+    bottom: 50%; 
+    padding: 10px;
+    border-radius: 35px;
+}
+
+.floatingButton:hover {
+    background-color: rgb(196, 155, 105);
+}
+
+
+.left { left: 20px }
+.right { right: 20px }

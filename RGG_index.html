@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGG page 1</title>
+    <link rel="stylesheet" href="RGG_style.css">
+    </head>
+<body>
+    <h1>Homepage index</h1>
+    <nav>
+        <ul>
+            <li><a href="RGG_index.html">home</a></li>
+            <li><a href="RGG_page2.html">2e pagina</a></li>
+            <li><a href="https://www.w3schools.com/tags/tag_nav.asp">NAV ipv div voor menu</a></li>
+        </ul> 
+    </nav>
+    <div id="middenBlokContainer">
+
+        <div id="site" class="blokken">
+            <ul id="ulMenuLeft">
+                <li><button onclick="zetPlaatje('Layout_1.png')">plaatje 1</button></li>
+                <li><button onclick="zetPlaatje('Layout_2.png')">plaatje 2</button></li>
+                <li><button onclick="zetPagina('wk4.1_vlakken_in_vlakken2.html')">eigen webPage</button></li>
+                <li><button onclick="zetPagina('https://www.tutorialrepublic.com')">webPage internet</button></li>
+            </ul>
+        </div>
+        
+        <div id="content" class="blokken">
+            <img src="3.5_blokInBlok.png" >
+        </div>
+    </div>      
+
+    <div id="footer">
+
+        <a href="https://www.codegrepper.com/code-examples/html/vs+code+html+skeleton+shortcut">
+            vs code html skeleton shortcut
+        </a><br>
+        <a href="https://www.w3schools.com/html/html5_syntax.asp">
+            naming conventions (hoofdletters, inspringen)
+        </a>
+    </div>     
+    <a href="RGG_index.html">
+        <input class="floatingButton left" type="button" value="<" class="btn btn-danger" />
+     </a>
+     <a href="RGG_page2.html">
+        <input class="floatingButton right" type="button" value=">" class="btn btn-danger" />
+    </a>
+</body>
+
+<script>
+    function zetPlaatje(plaatje) {
+      document.getElementById("content").innerHTML = "<img src='" + plaatje +   "'>";
+    }
+
+
+    function zetPagina2(webPagina) { 
+        document.getElementById("content").innerHTML = '<object type="text/html" data="' + webPagina + '" width="800px" height="600px" style="overflow:auto;border:5px ridge blue">  </object>'
+    }
+
+
+    function zetPagina(webPagina) { 
+        document.getElementById("content").innerHTML = 
+            '<iframe src="' + webPagina + '" width="800px" height="600px" style="overflow:auto;border:5px ridge blue">  </iframe>'
+    }
+</script>
+
+</html>
